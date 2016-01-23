@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.itheima.tabindicator.library.TabIndicator;
+import com.github.library.OkTabIndicator;
 
 public class LineActivity
         extends AppCompatActivity
@@ -20,23 +20,22 @@ public class LineActivity
     private static final String TAG = "LineActivity";
 
     private String[] mDatas = new String[]{"网游",
-                                           "WIFI万能钥匙",
-                                           "播放器",
-                                           "捕鱼达人2",
-                                           "机票",
-                                           "游戏",
-                                           "熊出没之熊大快跑"};
-    private TabIndicator mIndicator;
-    private ViewPager    mPager;
+            "WIFI万能钥匙",
+            "播放器",
+            "捕鱼达人2",
+            "机票",
+            "游戏",
+            "熊出没之熊大快跑"};
+    private OkTabIndicator mIndicator;
+    private ViewPager      mPager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line);
 
         mPager = (ViewPager) findViewById(R.id.pager);
-        mIndicator = (TabIndicator) findViewById(R.id.indicator);
+        mIndicator = (OkTabIndicator) findViewById(R.id.indicator);
 
 
         //设置adapter
@@ -78,10 +77,10 @@ public class LineActivity
         int      lineStyle     = mIndicator.getLineStyle();
         switch (lineStyle)
         {
-            case TabIndicator.LINE_STYLE_MATCH:
+            case OkTabIndicator.LINE_STYLE_MATCH:
                 lineMatchItem.setChecked(true);
                 break;
-            case TabIndicator.LINE_STYLE_WRAP:
+            case OkTabIndicator.LINE_STYLE_WRAP:
                 lineWrapItem.setChecked(true);
                 break;
             default:
@@ -98,11 +97,11 @@ public class LineActivity
         {
             case R.id.line_action_style_match:
                 item.setChecked(true);
-                mIndicator.setLineStyle(TabIndicator.LINE_STYLE_MATCH);
+                mIndicator.setLineStyle(OkTabIndicator.LINE_STYLE_MATCH);
                 break;
             case R.id.line_action_style_wrap:
                 item.setChecked(true);
-                mIndicator.setLineStyle(TabIndicator.LINE_STYLE_WRAP);
+                mIndicator.setLineStyle(OkTabIndicator.LINE_STYLE_WRAP);
                 break;
             case R.id.line_action_color:
                 choiceColor();

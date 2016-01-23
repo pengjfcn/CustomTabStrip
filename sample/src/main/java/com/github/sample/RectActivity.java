@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.itheima.tabindicator.library.TabIndicator;
+import com.github.library.OkTabIndicator;
 
 public class RectActivity
         extends AppCompatActivity
@@ -20,23 +20,22 @@ public class RectActivity
     private static final String TAG = "RectActivity";
 
     private String[] mDatas = new String[]{"网游",
-                                           "WIFI万能钥匙",
-                                           "播放器",
-                                           "捕鱼达人2",
-                                           "机票",
-                                           "游戏",
-                                           "熊出没之熊大快跑"};
-    private TabIndicator mIndicator;
-    private ViewPager    mPager;
+            "WIFI万能钥匙",
+            "播放器",
+            "捕鱼达人2",
+            "机票",
+            "游戏",
+            "熊出没之熊大快跑"};
+    private OkTabIndicator mIndicator;
+    private ViewPager      mPager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rect);
 
         mPager = (ViewPager) findViewById(R.id.pager);
-        mIndicator = (TabIndicator) findViewById(R.id.indicator);
+        mIndicator = (OkTabIndicator) findViewById(R.id.indicator);
 
 
         //设置adapter
@@ -47,8 +46,7 @@ public class RectActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_rect, menu);
 
         return super.onCreateOptionsMenu(menu);
@@ -63,12 +61,12 @@ public class RectActivity
         int      rectStyle       = mIndicator.getRectStyle();
         switch (rectStyle)
         {
-            case TabIndicator.RECT_STYLE_FILL:
+            case OkTabIndicator.RECT_STYLE_FILL:
                 rectFillItem.setChecked(true);
 
                 strokeColorItem.setVisible(false);
                 break;
-            case TabIndicator.RECT_STYLE_STROKE:
+            case OkTabIndicator.RECT_STYLE_STROKE:
                 rectStrokeItem.setChecked(true);
 
                 strokeColorItem.setVisible(true);
@@ -86,11 +84,11 @@ public class RectActivity
         {
             case R.id.rect_action_style_fill:
                 item.setChecked(true);
-                mIndicator.setRectStyle(TabIndicator.RECT_STYLE_FILL);
+                mIndicator.setRectStyle(OkTabIndicator.RECT_STYLE_FILL);
                 break;
             case R.id.rect_action_style_stroke:
                 item.setChecked(true);
-                mIndicator.setRectStyle(TabIndicator.RECT_STYLE_STROKE);
+                mIndicator.setRectStyle(OkTabIndicator.RECT_STYLE_STROKE);
                 break;
             case R.id.rect_action_color:
                 choiceColor();
