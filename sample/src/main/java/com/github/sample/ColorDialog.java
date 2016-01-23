@@ -8,14 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
-/*
- *  @项目名：  TabIndicator 
- *  @包名：    org.itheima.tabindicator.sample
- *  @文件名:   ColorDialog
- *  @创建者:   Administrator
- *  @创建时间:  2015/9/27 17:30
- *  @描述：    TODO
- */
+
 public class ColorDialog
         extends Dialog
         implements SeekBar.OnSeekBarChangeListener, View.OnClickListener

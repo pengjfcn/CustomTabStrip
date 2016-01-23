@@ -26,7 +26,7 @@ import java.util.ListIterator;
  * @Package: com.github.library
  * @Author: Think
  * @Time: 2016/1/23
- * @desc: TODO
+ * @desc: OkTabIndicator
  */
 public class OkTabIndicator extends HorizontalScrollView {
     public final static String TAG = "OkTabIndicator";

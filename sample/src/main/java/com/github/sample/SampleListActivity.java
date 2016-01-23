@@ -12,9 +12,9 @@ public class SampleListActivity extends AppCompatActivity
         implements AdapterView.OnItemClickListener {
 
     private ListView mListView;
-    private String[] titles = new String[]{"Line Mode",
-            "Triangle Mode",
-            "Rect Mode"};
+    private String[] titles = new String[]{"线性模式",
+            "三角形模式",
+            "矩形模式"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class SampleListActivity extends AppCompatActivity
         mListView = (ListView) findViewById(R.id.list_view);
 
 
-        mListView.setAdapter(new ArrayAdapter<String>(this,
+        mListView.setAdapter(new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1,
                 titles));
 

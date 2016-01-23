@@ -19,13 +19,16 @@ public class TriangleActivity
 
     private static final String TAG = "LineActivity";
 
-    private String[] mDatas = new String[]{"网游",
-            "WIFI万能钥匙",
-            "播放器",
-            "捕鱼达人2",
-            "机票",
-            "游戏",
-            "熊出没之熊大快跑"};
+    private String[] mDatas = new String[]{"奥巴马",
+            "普京",
+            "小鱼儿",
+            "我是一只小小鸟",
+            "飞呀",
+            "飞到花丛中",
+            "熊出没之熊大快跑",
+            "喜欢你",
+            "自由飞翔",
+            "鸟叔"};
     private OkTabIndicator    mIndicator;
     private ViewPager mPager;
 
