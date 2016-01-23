@@ -1,4 +1,4 @@
-# __Android CustomTabStrip__
+# __Android OkTabIndicator__
 
-_CustomTabStrip__ is an Open Source Android library.__
+_OkTabIndicator__ is an Open Source Android library.__
 
