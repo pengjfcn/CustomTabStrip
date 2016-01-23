@@ -1,6 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    xmlns:github="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,12 +9,12 @@
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        itheima:tiRectColor="#ff0000"
-        itheima:tiRectRadius="15dp"
-        itheima:tiRectStrokeColor="#0000ff"
-        itheima:tiRectStrokeWidth="2dp"
-        itheima:tiRectStyle="fill"
-        itheima:tiTabMode="rect"
+        github:tiRectColor="#ff0000"
+        github:tiRectRadius="15dp"
+        github:tiRectStrokeColor="#0000ff"
+        github:tiRectStrokeWidth="2dp"
+        github:tiRectStyle="fill"
+        github:tiTabMode="rect"
         />
 
     <android.support.v4.view.ViewPager
